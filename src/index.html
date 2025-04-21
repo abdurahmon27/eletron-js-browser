@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyBrowser</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="browser">
+      <div class="tabs-container">
+        <div class="tabs" id="tabs">
+          <div class="tab active" data-tab-id="tab-1">New Tab</div>
+          <button id="new-tab-btn">+</button>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <button id="back-btn" title="Back"><</button>
+        <button id="forward-btn" title="Forward">></button>
+        <button id="reload-btn" title="Reload">↻</button>
+        <button id="home-btn" title="Home">🏠</button>
+        <input type="text" id="url-input" placeholder="Enter URL or search..." />
+        <button id="go-btn">Go</button>
+        <button id="bookmark-btn" title="Bookmark">★</button>
+      </div>
+      <div class="bookmarks-bar" id="bookmarks-bar"></div>
+      <div class="web-contents-container" id="web-contents-container">
+        <!-- Browser views will be rendered here -->
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
