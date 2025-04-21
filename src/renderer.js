@@ -113,7 +113,6 @@ function setupWebviewEventListeners(webview, tabId) {
         flex-direction: column !important;
         flex: 1 1 auto !important;
         min-height: 0 !important;
-        overflow: hidden !important;
       }
       
       iframe, webview, object, embed {
